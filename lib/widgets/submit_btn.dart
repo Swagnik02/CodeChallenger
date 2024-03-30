@@ -12,7 +12,7 @@ Widget submitButton(
     },
     child: Text(
       'Submit'.toUpperCase(),
-      style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+      style: const TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
     ),
   );
 }
