@@ -1,3 +1,4 @@
+import 'package:code_challenger/common/color_pallete.dart';
 import 'package:code_challenger/models/questions_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_code_editor/flutter_code_editor.dart';
@@ -24,17 +25,33 @@ class SubmitHandler {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text(isCorrect ? 'Correct Answer' : 'Incorrect Answer'),
-          content: Text(isCorrect
-              ? 'Congratulations! Your answer is correct.'
-              : 'Sorry, your answer is incorrect.'),
+          backgroundColor: Colors.limeAccent,
+          title: Text(
+            isCorrect ? 'Correct Answer' : 'Incorrect Answer',
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: ColorPalette.alternateBgColor),
+          ),
+          content: Text(
+            isCorrect
+                ? 'Congratulations! Your answer is correct.'
+                : 'Sorry, your answer is incorrect.',
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: ColorPalette.alternateBgColor),
+          ),
           actions: [
             TextButton(
               onPressed: () {
                 Get.back();
                 Get.back(); // Go back twice to return to the previous screen
               },
-              child: Text('OK'),
+              child: Text(
+                'OK',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: ColorPalette.alternateBgColor),
+              ),
             ),
           ],
         );

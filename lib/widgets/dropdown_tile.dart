@@ -8,6 +8,11 @@ import 'package:flutter_code_editor/flutter_code_editor.dart';
 
 import 'package:highlight/languages/cpp.dart';
 
+final codeEditorController = CodeController(
+  text: FrequentStrings.defaultCode,
+  language: cpp,
+);
+
 class DropDownTile extends StatefulWidget {
   final QuestionsModel? question;
   final String title;
@@ -26,17 +31,6 @@ class DropDownTile extends StatefulWidget {
 
 class _DropDownTileState extends State<DropDownTile> {
   bool dropdown = false;
-  TextEditingController codeController = TextEditingController();
-  final codeEditorController = CodeController(
-    text: FrequentStrings.defaultCode,
-    language: cpp,
-  );
-
-  @override
-  void dispose() {
-    codeController.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {

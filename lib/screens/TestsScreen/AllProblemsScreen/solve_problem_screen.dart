@@ -1,6 +1,7 @@
 import 'package:code_challenger/common/color_pallete.dart';
 import 'package:code_challenger/models/questions_model.dart';
 import 'package:code_challenger/widgets/dropdown_tile.dart';
+import 'package:code_challenger/widgets/submit_btn.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -94,7 +95,8 @@ class SolveProblemScreen extends StatelessWidget {
             title: 'Code Editor </>',
             content: 'codeEditor',
           ),
-          _submitButton(),
+          // _submitButton(),
+          submitButton(context, question, codeEditorController),
         ],
       ),
     );
