@@ -1,16 +1,8 @@
 # code_challenger
 
-A new Flutter project.
+An assignment by CodeJunior from internshaala.
+This is basically a coding test application designed for mobile with a better user experience.
 
-## Getting Started
+## Walkthrough Video
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://github.com/Swagnik02/CodeChallenger/assets/91018814/aed1ce67-14c6-49f6-afd5-3884101b90af
